@@ -5,108 +5,303 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JC Grupo Constructor S.A.S</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav>
+    <nav id="navbar">
         <div class="logo">
-            <img src="img/logo.png" alt="JC Grupo Constructor">
+            <img src="img/JC Grupo Constructor negro 300.png" alt="JC Grupo Constructor">
         </div>
         <ul>
             <li><a href="index.html" class="activo">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="servicios/index.html">Servicios</a></li>
-            <li><a href="portafolio/index.html">Portafolio</a></li>
+            <li><a href="portafolio/index.html">Proyectos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
+        <a href="contacto.html" class="btn-contacto-nav">Contáctanos</a>
     </nav>
 
     <!-- HERO -->
     <section id="hero">
-        <h1>Soluciones de construcción para proyectos pequeños y medianos</h1>
-        <p>Más de 55 años de experiencia en cerramientos, estructuras metálicas y obras civiles en Medellín.</p>
-        <a href="contacto.html" class="btn-principal">Solicitar cotización</a>
+        <div class="hero-overlay"></div>
+        <div class="hero-contenido">
+            <h1>Construimos con <span class="titulo-amarillo">Honestidad</span> y Excelencia</h1>
+            <p>Ingeniería de alta calidad para proyectos que transforman el futuro. Soluciones integrales en infraestructura y arquitectura.</p>
+            <a href="portafolio/index.html" class="btn-principal">Nuestros Proyectos</a>
+        </div>
+        <div class="hero-imagen-derecha">
+            <p class="hero-quote">"Ingeniería que trasciente los límites de la construcción convencional."</p>
+        </div>
+    </section>
+
+    <!-- MERCADOS -->
+    <section id="mercados">
+        <div class="seccion-header">
+            <h2>Mercados que Servimos</h2>
+            <div class="header-linea"></div>
+        </div>
+        <div class="mercados-grid">
+            <div class="mercado-card">
+                <div class="foto-placeholder">Foto</div>
+                <p>Propiedades Horizontales</p>
+            </div>
+            <div class="mercado-card">
+                <div class="foto-placeholder">Foto</div>
+                <p>Sector Industrial</p>
+            </div>
+            <div class="mercado-card">
+                <div class="foto-placeholder">Foto</div>
+                <p>Sector Residencial</p>
+            </div>
+            <div class="mercado-card">
+                <div class="foto-placeholder">Foto</div>
+                <p>Empresas Constructoras</p>
+            </div>
+        </div>
     </section>
 
     <!-- SERVICIOS -->
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
-
             <a href="servicios/cerramientos.html" class="servicio-card">
-                <h3>Cerramientos Perimetrales</h3>
-                <p>Malla eslabonada, cerco eléctrico, tubulares, púas, concertinas y más.</p>
-                <span>Ver servicio →</span>
+                <div class="foto-placeholder">Foto</div>
+                <div class="servicio-card-info">
+                    <h3>Cerramientos Perimetrales</h3>
+                    <span class="btn-leer">Cotizar <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </a>
-
             <a href="servicios/estructuras.html" class="servicio-card">
-                <h3>Estructuras Metálicas</h3>
-                <p>Estructuras pesadas, semipesadas, livianas y carpintería metálica.</p>
-                <span>Ver servicio →</span>
+                <div class="foto-placeholder">Foto</div>
+                <div class="servicio-card-info">
+                    <h3>Estructuras Metálicas</h3>
+                    <span class="btn-leer">Cotizar <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </a>
-
             <a href="servicios/obras-civiles.html" class="servicio-card">
-                <h3>Obras Civiles</h3>
-                <p>Ejecución de obras civiles generales para proyectos pequeños y medianos.</p>
-                <span>Ver servicio →</span>
+                <div class="foto-placeholder">Foto</div>
+                <div class="servicio-card-info">
+                    <h3>Obras Civiles</h3>
+                    <span class="btn-leer">Cotizar <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </a>
-
             <a href="servicios/consultoria.html" class="servicio-card">
-                <h3>Consultoría</h3>
-                <p>Presupuestos y programación de obra con criterio técnico y profesional.</p>
-                <span>Ver servicio →</span>
+                <div class="foto-placeholder">Foto</div>
+                <div class="servicio-card-info">
+                    <h3>Consultoría y Presupuestos</h3>
+                    <span class="btn-leer">Cotizar <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </a>
-
             <a href="servicios/interventoria.html" class="servicio-card">
-                <h3>Interventoría</h3>
-                <p>Interventoría técnica para pequeños proyectos de construcción.</p>
-                <span>Ver servicio →</span>
+                <div class="foto-placeholder">Foto</div>
+                <div class="servicio-card-info">
+                    <h3>Interventoría</h3>
+                    <span class="btn-leer">Cotizar <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
             </a>
-
         </div>
     </section>
 
-    <!-- NOSOTROS -->
-    <section id="nosotros">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una empresa legalmente constituida en Medellín, con más de 55 años de experiencia acumulada entre nuestros profesionales. Trabajamos con compromiso, técnica y respaldo legal en cada proyecto.</p>
-        <a href="nosotros.html" class="btn-secundario">Conócenos</a>
-    </section>
-
-    <!-- PORTAFOLIO -->
-    <section id="portafolio">
-        <h2>Proyectos destacados</h2>
-        <div class="portafolio-grid">
-            <div class="proyecto-card">Proyecto 1</div>
-            <div class="proyecto-card">Proyecto 2</div>
-            <div class="proyecto-card">Proyecto 3</div>
+    <!-- SOBRE EMPRESA -->
+    <section id="sobre-empresa">
+        <div class="sobre-overlay"></div>
+        <div class="sobre-contenido">
+            <span class="sobre-etiqueta">Nuestra Filosofía</span>
+            <h2>Ingeniería Humana y <span class="titulo-amarillo">Transparente</span></h2>
+            <p>Contamos con un equipo multidisciplinario de alto nivel compuesto por dos Ingenieros Civiles y un Ingeniero Mecatrónico. Nuestra esencia se basa en la honestidad radical: <strong>"Solo vendemos lo que el cliente realmente necesita."</strong></p>
+            <div class="sobre-metricas">
+                <div class="metrica">
+                    <span class="metrica-numero">2</span>
+                    <span class="metrica-label">Ing. Civiles</span>
+                </div>
+                <div class="metrica">
+                    <span class="metrica-numero">1</span>
+                    <span class="metrica-label">Ing. Mecatrónico</span>
+                </div>
+                <div class="metrica">
+                    <span class="metrica-numero">100%</span>
+                    <span class="metrica-label">Transparencia</span>
+                </div>
+            </div>
         </div>
-        <a href="portafolio/index.html" class="btn-secundario">Ver portafolio completo</a>
+        <div class="sobre-foto">
+            <div class="foto-placeholder">Foto equipo</div>
+        </div>
     </section>
 
-    <!-- CONTACTO CTA -->
-    <section id="contacto-cta">
-        <h2>¿Tienes un proyecto en mente?</h2>
-        <p>Cuéntanos qué necesitas y te damos una solución.</p>
-        <a href="https://wa.me/573505253746" class="btn-whatsapp">Escríbenos por WhatsApp</a>
-        <a href="contacto.html" class="btn-secundario">Formulario de contacto</a>
+    <!-- VISIÓN Y MISIÓN -->
+    <section id="vision-mision">
+        <div class="vm-card">
+            <i class="fa-regular fa-eye vm-icono"></i>
+            <h3>Misión</h3>
+            <p>Brindar soluciones constructivas honestas y de alta calidad, entendiendo las necesidades reales de cada cliente para ofrecerle la alternativa más eficiente, duradera y ajustada a su presupuesto. No vendemos más de lo que se necesita — construimos lo que el proyecto requiere.</p>
+        </div>
+        <div class="vm-card">
+            <i class="fa-solid fa-rocket vm-icono"></i>
+            <h3>Visión</h3>
+            <p>En 2030, ser la empresa de construcción de referencia en Medellín para proyectos pequeños y medianos, reconocida por la honestidad en nuestra asesoría, la calidad de nuestra ejecución y las relaciones duraderas que construimos con cada cliente.</p>
+        </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso">
+        <h2>Nuestro Proceso</h2>
+        <div class="proceso-grid">
+            <div class="proceso-paso">
+                <span class="proceso-numero">1</span>
+                <i class="fa-solid fa-magnifying-glass proceso-icono"></i>
+                <h3>Consulta Inicial</h3>
+                <p>Entendemos tu proyecto, tus necesidades y los alcances antes de proponer cualquier solución.</p>
+            </div>
+            <div class="proceso-flecha"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="proceso-paso">
+                <span class="proceso-numero">2</span>
+                <i class="fa-solid fa-pen-ruler proceso-icono"></i>
+                <h3>Diseño y Presupuesto</h3>
+                <p>Elaboramos el presupuesto detallado y la programación de obra para que conozcas cada detalle.</p>
+            </div>
+            <div class="proceso-flecha"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="proceso-paso">
+                <span class="proceso-numero">3</span>
+                <i class="fa-solid fa-helmet-safety proceso-icono"></i>
+                <h3>Ejecución</h3>
+                <p>Construimos con calidad, seguridad y cumplimiento, entregando el proyecto según lo acordado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALORES -->
+    <section id="valores">
+        <div class="valores-grid">
+            <div class="valor-item">
+                <i class="fa-solid fa-shield-halved valor-icono"></i>
+                <h3>Seguridad</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-handshake valor-icono"></i>
+                <h3>Integridad</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-star valor-icono"></i>
+                <h3>Calidad</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-people-group valor-icono"></i>
+                <h3>Trabajo en Equipo</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-lightbulb valor-icono"></i>
+                <h3>Innovación</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-clock valor-icono"></i>
+                <h3>Cumplimiento</h3>
+            </div>
+            <div class="valor-item">
+                <i class="fa-solid fa-leaf valor-icono"></i>
+                <h3>Responsabilidad Ambiental</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section id="proyectos">
+        <div class="proyectos-header">
+            <h2>Proyectos Destacados</h2>
+            <a href="portafolio/index.html" class="ver-todos">Ver Todos los Proyectos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <div class="proyecto-foto">
+                    <div class="foto-placeholder">Foto</div>
+                    <span class="proyecto-etiqueta">Industrial</span>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Centro Logístico Alpha</h3>
+                    <p>Estructura metálica realizada en 3,500 m² con especificaciones de alta seguridad y diseño industrial.</p>
+                    <a href="portafolio/index.html" class="proyecto-link">Ver Proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-foto">
+                    <div class="foto-placeholder">Foto</div>
+                    <span class="proyecto-etiqueta">Remodelación</span>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Edificio Corporativo Sky</h3>
+                    <p>Intervención integral de fachada y reforma interna para modernización de oficinas nivel A.</p>
+                    <a href="portafolio/index.html" class="proyecto-link">Ver Proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="proyecto-card">
+                <div class="proyecto-foto">
+                    <div class="foto-placeholder">Foto</div>
+                    <span class="proyecto-etiqueta">Residencial</span>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Residencial Bosque Alto</h3>
+                    <p>Construcción integral de 37 casas tipo con acabados premium y cerramientos perimetrales.</p>
+                    <a href="portafolio/index.html" class="proyecto-link">Ver Proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-logo">
-            <img src="img/logo.png" alt="JC Grupo Constructor">
+    <footer id="footer">
+        <div class="footer-grid">
+            <div class="footer-marca">
+                <img src="img/JC Grupo Constructor blanco 300.png" alt="JC Grupo Constructor" class="footer-logo">
+                <div class="footer-dato">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Medellín, Antioquia, Colombia</p>
+                </div>
+                <div class="footer-dato">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+57 350 525 3746</p>
+                </div>
+                <div class="footer-dato">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>jcgrupoconstructor1@gmail.com</p>
+                </div>
+                <div class="redes-sociales">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-formulario">
+                <h3>Envíanos un Mensaje</h3>
+                <div class="campo">
+                    <input type="text" placeholder="Nombre Completo">
+                </div>
+                <div class="campo">
+                    <input type="email" placeholder="Correo Electrónico">
+                </div>
+                <div class="campo">
+                    <textarea rows="4" placeholder="Mensaje"></textarea>
+                </div>
+                <button class="btn-principal">Enviar Consulta</button>
+            </div>
+            <div class="footer-links">
+                <h3>Accesos Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios/index.html">Servicios</a></li>
+                    <li><a href="portafolio/index.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="servicios/consultoria.html">Pide un Presupuesto</a></li>
+                </ul>
+            </div>
         </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios/index.html">Servicios</a></li>
-            <li><a href="portafolio/index.html">Portafolio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <p>JC Grupo Constructor S.A.S — Medellín, Colombia</p>
-        <p>© 2025 Todos los derechos reservados</p>
+        <div class="footer-bottom">
+            <p>© 2026 JC Grupo Constructor S.A.S — Medellín, Colombia. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
